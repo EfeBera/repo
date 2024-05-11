@@ -1,0 +1,10 @@
+import random
+
+karakter = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+uzunluk = int(input("Şifreniz hangi uzunlukta olsun?: "))
+parola = ""
+
+for i in range(uzunluk):
+    parola = parola + random.choice(karakter)
+
+    print("Oluşturulan Parola", parola)
